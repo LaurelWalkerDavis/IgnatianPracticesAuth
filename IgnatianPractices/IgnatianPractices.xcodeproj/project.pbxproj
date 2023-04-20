@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51803FD29E0FA9500316379 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51803FC29E0FA9500316379 /* BookView.swift */; };
+		F51803FF29E1B5F900316379 /* ChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51803FE29E1B5F900316379 /* ChapterView.swift */; };
+		F518040129E1BDCA00316379 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518040029E1BDCA00316379 /* VerseView.swift */; };
+		F518040329E3608500316379 /* VerseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518040229E3608500316379 /* VerseViewModel.swift */; };
+		F518697B29DA3AAE0074E5E7 /* IgnatianPracticesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518697A29DA3AAE0074E5E7 /* IgnatianPracticesApp.swift */; };
+		F518697D29DA3AAE0074E5E7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518697C29DA3AAE0074E5E7 /* MenuView.swift */; };
+		F518697F29DA3AAF0074E5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F518697E29DA3AAF0074E5E7 /* Assets.xcassets */; };
+		F518698229DA3AAF0074E5E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F518698129DA3AAF0074E5E7 /* Preview Assets.xcassets */; };
+		F518698929DA50850074E5E7 /* BibleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518698829DA50850074E5E7 /* BibleViewModel.swift */; };
+		F518698B29DA5A200074E5E7 /* BibleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F518698A29DA5A200074E5E7 /* BibleModel.swift */; };
+		F5D4968829F1CD13002D7248 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4968729F1CD13002D7248 /* LoginViewModel.swift */; };
+		F5D4968A29F1CEB8002D7248 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D4968929F1CEB8002D7248 /* GoogleService-Info.plist */; };
+		F5D4968C29F1D04B002D7248 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D4968B29F1D04B002D7248 /* LoginView.swift */; };
+		F5ED6FC429E8E074007439AF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F5ED6FC329E8E074007439AF /* FirebaseAnalytics */; };
+		F5ED6FC629E8E074007439AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F5ED6FC529E8E074007439AF /* FirebaseFirestore */; };
+		F5ED6FC829E8E074007439AF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5ED6FC729E8E074007439AF /* FirebaseFirestoreSwift */; };
+		F5ED6FCA29E8E3CF007439AF /* ConsolationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FC929E8E3CF007439AF /* ConsolationModel.swift */; };
+		F5ED6FCC29E8E66F007439AF /* ConsolationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FCB29E8E66F007439AF /* ConsolationViewModel.swift */; };
+		F5ED6FCE29E8E890007439AF /* ConsolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FCD29E8E890007439AF /* ConsolationView.swift */; };
+		F5ED6FD029E8E9CD007439AF /* ConsolationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FCF29E8E9CD007439AF /* ConsolationDetail.swift */; };
+		F5ED6FD429E99A12007439AF /* LifeReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FD329E99A12007439AF /* LifeReviewView.swift */; };
+		F5ED6FD729E9D049007439AF /* ConsolationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FD629E9D049007439AF /* ConsolationHistory.swift */; };
+		F5ED6FD929E9E8A6007439AF /* LectioDivina.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FD829E9E8A6007439AF /* LectioDivina.swift */; };
+		F5ED6FDB29E9E8BD007439AF /* ImaginativePrayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FDA29E9E8BD007439AF /* ImaginativePrayer.swift */; };
+		F5ED6FDD29EA06A9007439AF /* Examen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FDC29EA06A9007439AF /* Examen.swift */; };
+		F5ED6FDF29EA0E91007439AF /* DesolationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FDE29EA0E91007439AF /* DesolationsView.swift */; };
+		F5ED6FE129EA0EDA007439AF /* DesolationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FE029EA0EDA007439AF /* DesolationModel.swift */; };
+		F5ED6FE329EA1151007439AF /* DesolationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FE229EA1151007439AF /* DesolationViewModel.swift */; };
+		F5ED6FE529EA12FC007439AF /* DesolationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FE429EA12FC007439AF /* DesolationDetail.swift */; };
+		F5ED6FE729EA2CDD007439AF /* DesolationHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FE629EA2CDD007439AF /* DesolationHistory.swift */; };
+		F5ED6FEA29EA4F71007439AF /* ConsolationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FE929EA4F71007439AF /* ConsolationEntry.swift */; };
+		F5ED6FEC29EA5561007439AF /* DesolationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FEB29EA5561007439AF /* DesolationEntry.swift */; };
+		F5ED6FEE29EDB9D6007439AF /* Contemplation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FED29EDB9D6007439AF /* Contemplation.swift */; };
+		F5ED6FF029EDBB1E007439AF /* ContemplationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FEF29EDBB1E007439AF /* ContemplationViewModel.swift */; };
+		F5ED6FF229EDBB68007439AF /* ContemplationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FF129EDBB68007439AF /* ContemplationModel.swift */; };
+		F5ED6FF729EDE9A3007439AF /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FF629EDE9A2007439AF /* NoteModel.swift */; };
+		F5ED6FF929EDEAA0007439AF /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FF829EDEAA0007439AF /* NoteViewModel.swift */; };
+		F5ED6FFB29EDEE2E007439AF /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FFA29EDEE2E007439AF /* NoteView.swift */; };
+		F5ED6FFD29EDF266007439AF /* NoteEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5ED6FFC29EDF266007439AF /* NoteEntry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F51803FC29E0FA9500316379 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		F51803FE29E1B5F900316379 /* ChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterView.swift; sourceTree = "<group>"; };
+		F518040029E1BDCA00316379 /* VerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseView.swift; sourceTree = "<group>"; };
+		F518040229E3608500316379 /* VerseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseViewModel.swift; sourceTree = "<group>"; };
+		F518697729DA3AAE0074E5E7 /* IgnatianPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IgnatianPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F518697A29DA3AAE0074E5E7 /* IgnatianPracticesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnatianPracticesApp.swift; sourceTree = "<group>"; };
+		F518697C29DA3AAE0074E5E7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		F518697E29DA3AAF0074E5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F518698129DA3AAF0074E5E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F518698829DA50850074E5E7 /* BibleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleViewModel.swift; sourceTree = "<group>"; };
+		F518698A29DA5A200074E5E7 /* BibleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleModel.swift; sourceTree = "<group>"; };
+		F5D4968729F1CD13002D7248 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F5D4968929F1CEB8002D7248 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5D4968B29F1D04B002D7248 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F5ED6FC929E8E3CF007439AF /* ConsolationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationModel.swift; sourceTree = "<group>"; };
+		F5ED6FCB29E8E66F007439AF /* ConsolationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationViewModel.swift; sourceTree = "<group>"; };
+		F5ED6FCD29E8E890007439AF /* ConsolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationView.swift; sourceTree = "<group>"; };
+		F5ED6FCF29E8E9CD007439AF /* ConsolationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationDetail.swift; sourceTree = "<group>"; };
+		F5ED6FD329E99A12007439AF /* LifeReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeReviewView.swift; sourceTree = "<group>"; };
+		F5ED6FD629E9D049007439AF /* ConsolationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationHistory.swift; sourceTree = "<group>"; };
+		F5ED6FD829E9E8A6007439AF /* LectioDivina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectioDivina.swift; sourceTree = "<group>"; };
+		F5ED6FDA29E9E8BD007439AF /* ImaginativePrayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginativePrayer.swift; sourceTree = "<group>"; };
+		F5ED6FDC29EA06A9007439AF /* Examen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examen.swift; sourceTree = "<group>"; };
+		F5ED6FDE29EA0E91007439AF /* DesolationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationsView.swift; sourceTree = "<group>"; };
+		F5ED6FE029EA0EDA007439AF /* DesolationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationModel.swift; sourceTree = "<group>"; };
+		F5ED6FE229EA1151007439AF /* DesolationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationViewModel.swift; sourceTree = "<group>"; };
+		F5ED6FE429EA12FC007439AF /* DesolationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationDetail.swift; sourceTree = "<group>"; };
+		F5ED6FE629EA2CDD007439AF /* DesolationHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationHistory.swift; sourceTree = "<group>"; };
+		F5ED6FE929EA4F71007439AF /* ConsolationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolationEntry.swift; sourceTree = "<group>"; };
+		F5ED6FEB29EA5561007439AF /* DesolationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesolationEntry.swift; sourceTree = "<group>"; };
+		F5ED6FED29EDB9D6007439AF /* Contemplation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contemplation.swift; sourceTree = "<group>"; };
+		F5ED6FEF29EDBB1E007439AF /* ContemplationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemplationViewModel.swift; sourceTree = "<group>"; };
+		F5ED6FF129EDBB68007439AF /* ContemplationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContemplationModel.swift; sourceTree = "<group>"; };
+		F5ED6FF629EDE9A2007439AF /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		F5ED6FF829EDEAA0007439AF /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		F5ED6FFA29EDEE2E007439AF /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		F5ED6FFC29EDF266007439AF /* NoteEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F518697429DA3AAE0074E5E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED6FC429E8E074007439AF /* FirebaseAnalytics in Frameworks */,
+				F5ED6FC629E8E074007439AF /* FirebaseFirestore in Frameworks */,
+				F5ED6FC829E8E074007439AF /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F518696E29DA3AAE0074E5E7 = {
+			isa = PBXGroup;
+			children = (
+				F518697929DA3AAE0074E5E7 /* IgnatianPractices */,
+				F518697829DA3AAE0074E5E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F518697829DA3AAE0074E5E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F518697729DA3AAE0074E5E7 /* IgnatianPractices.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F518697929DA3AAE0074E5E7 /* IgnatianPractices */ = {
+			isa = PBXGroup;
+			children = (
+				F518697A29DA3AAE0074E5E7 /* IgnatianPracticesApp.swift */,
+				F5D4968929F1CEB8002D7248 /* GoogleService-Info.plist */,
+				F518697E29DA3AAF0074E5E7 /* Assets.xcassets */,
+				F518699029DA5AD20074E5E7 /* ViewModels */,
+				F518698F29DA5AC50074E5E7 /* Models */,
+				F518698E29DA5AB80074E5E7 /* Views */,
+				F518698029DA3AAF0074E5E7 /* Preview Content */,
+			);
+			path = IgnatianPractices;
+			sourceTree = "<group>";
+		};
+		F518698029DA3AAF0074E5E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F518698129DA3AAF0074E5E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F518698E29DA5AB80074E5E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5D4968B29F1D04B002D7248 /* LoginView.swift */,
+				F518697C29DA3AAE0074E5E7 /* MenuView.swift */,
+				F5ED6FD829E9E8A6007439AF /* LectioDivina.swift */,
+				F5ED6FDA29E9E8BD007439AF /* ImaginativePrayer.swift */,
+				F5ED6FDC29EA06A9007439AF /* Examen.swift */,
+				F5ED6FED29EDB9D6007439AF /* Contemplation.swift */,
+				F5ED6FD329E99A12007439AF /* LifeReviewView.swift */,
+				F5ED6FFA29EDEE2E007439AF /* NoteView.swift */,
+				F5ED6FFC29EDF266007439AF /* NoteEntry.swift */,
+				F5ED6FD529E9C4A0007439AF /* Consolations */,
+				F5ED6FE829EA2D45007439AF /* Desolations */,
+				F5ED6FF529EDE471007439AF /* BibleViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F518698F29DA5AC50074E5E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F518698A29DA5A200074E5E7 /* BibleModel.swift */,
+				F5ED6FC929E8E3CF007439AF /* ConsolationModel.swift */,
+				F5ED6FE029EA0EDA007439AF /* DesolationModel.swift */,
+				F5ED6FF129EDBB68007439AF /* ContemplationModel.swift */,
+				F5ED6FF629EDE9A2007439AF /* NoteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F518699029DA5AD20074E5E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F518698829DA50850074E5E7 /* BibleViewModel.swift */,
+				F518040229E3608500316379 /* VerseViewModel.swift */,
+				F5ED6FCB29E8E66F007439AF /* ConsolationViewModel.swift */,
+				F5ED6FE229EA1151007439AF /* DesolationViewModel.swift */,
+				F5ED6FEF29EDBB1E007439AF /* ContemplationViewModel.swift */,
+				F5ED6FF829EDEAA0007439AF /* NoteViewModel.swift */,
+				F5D4968729F1CD13002D7248 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F5ED6FD529E9C4A0007439AF /* Consolations */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED6FCD29E8E890007439AF /* ConsolationView.swift */,
+				F5ED6FCF29E8E9CD007439AF /* ConsolationDetail.swift */,
+				F5ED6FD629E9D049007439AF /* ConsolationHistory.swift */,
+				F5ED6FE929EA4F71007439AF /* ConsolationEntry.swift */,
+			);
+			path = Consolations;
+			sourceTree = "<group>";
+		};
+		F5ED6FE829EA2D45007439AF /* Desolations */ = {
+			isa = PBXGroup;
+			children = (
+				F5ED6FDE29EA0E91007439AF /* DesolationsView.swift */,
+				F5ED6FE429EA12FC007439AF /* DesolationDetail.swift */,
+				F5ED6FE629EA2CDD007439AF /* DesolationHistory.swift */,
+				F5ED6FEB29EA5561007439AF /* DesolationEntry.swift */,
+			);
+			path = Desolations;
+			sourceTree = "<group>";
+		};
+		F5ED6FF529EDE471007439AF /* BibleViews */ = {
+			isa = PBXGroup;
+			children = (
+				F51803FC29E0FA9500316379 /* BookView.swift */,
+				F51803FE29E1B5F900316379 /* ChapterView.swift */,
+				F518040029E1BDCA00316379 /* VerseView.swift */,
+			);
+			path = BibleViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F518697629DA3AAE0074E5E7 /* IgnatianPractices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F518698529DA3AAF0074E5E7 /* Build configuration list for PBXNativeTarget "IgnatianPractices" */;
+			buildPhases = (
+				F518697329DA3AAE0074E5E7 /* Sources */,
+				F518697429DA3AAE0074E5E7 /* Frameworks */,
+				F518697529DA3AAE0074E5E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IgnatianPractices;
+			packageProductDependencies = (
+				F5ED6FC329E8E074007439AF /* FirebaseAnalytics */,
+				F5ED6FC529E8E074007439AF /* FirebaseFirestore */,
+				F5ED6FC729E8E074007439AF /* FirebaseFirestoreSwift */,
+			);
+			productName = IgnatianPractices;
+			productReference = F518697729DA3AAE0074E5E7 /* IgnatianPractices.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F518696F29DA3AAE0074E5E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F518697629DA3AAE0074E5E7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F518697229DA3AAE0074E5E7 /* Build configuration list for PBXProject "IgnatianPractices" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F518696E29DA3AAE0074E5E7;
+			packageReferences = (
+				F5ED6FC229E8E074007439AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F518697829DA3AAE0074E5E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F518697629DA3AAE0074E5E7 /* IgnatianPractices */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F518697529DA3AAE0074E5E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F518698229DA3AAF0074E5E7 /* Preview Assets.xcassets in Resources */,
+				F518697F29DA3AAF0074E5E7 /* Assets.xcassets in Resources */,
+				F5D4968A29F1CEB8002D7248 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F518697329DA3AAE0074E5E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5ED6FD729E9D049007439AF /* ConsolationHistory.swift in Sources */,
+				F518697D29DA3AAE0074E5E7 /* MenuView.swift in Sources */,
+				F5D4968829F1CD13002D7248 /* LoginViewModel.swift in Sources */,
+				F518040329E3608500316379 /* VerseViewModel.swift in Sources */,
+				F518698929DA50850074E5E7 /* BibleViewModel.swift in Sources */,
+				F5ED6FF029EDBB1E007439AF /* ContemplationViewModel.swift in Sources */,
+				F518040129E1BDCA00316379 /* VerseView.swift in Sources */,
+				F5ED6FCC29E8E66F007439AF /* ConsolationViewModel.swift in Sources */,
+				F5ED6FF229EDBB68007439AF /* ContemplationModel.swift in Sources */,
+				F5ED6FE329EA1151007439AF /* DesolationViewModel.swift in Sources */,
+				F5D4968C29F1D04B002D7248 /* LoginView.swift in Sources */,
+				F5ED6FDD29EA06A9007439AF /* Examen.swift in Sources */,
+				F5ED6FCE29E8E890007439AF /* ConsolationView.swift in Sources */,
+				F5ED6FD929E9E8A6007439AF /* LectioDivina.swift in Sources */,
+				F5ED6FE129EA0EDA007439AF /* DesolationModel.swift in Sources */,
+				F5ED6FE529EA12FC007439AF /* DesolationDetail.swift in Sources */,
+				F51803FF29E1B5F900316379 /* ChapterView.swift in Sources */,
+				F51803FD29E0FA9500316379 /* BookView.swift in Sources */,
+				F5ED6FF929EDEAA0007439AF /* NoteViewModel.swift in Sources */,
+				F5ED6FCA29E8E3CF007439AF /* ConsolationModel.swift in Sources */,
+				F5ED6FF729EDE9A3007439AF /* NoteModel.swift in Sources */,
+				F518698B29DA5A200074E5E7 /* BibleModel.swift in Sources */,
+				F5ED6FE729EA2CDD007439AF /* DesolationHistory.swift in Sources */,
+				F5ED6FD029E8E9CD007439AF /* ConsolationDetail.swift in Sources */,
+				F5ED6FDF29EA0E91007439AF /* DesolationsView.swift in Sources */,
+				F5ED6FFD29EDF266007439AF /* NoteEntry.swift in Sources */,
+				F5ED6FDB29E9E8BD007439AF /* ImaginativePrayer.swift in Sources */,
+				F5ED6FEC29EA5561007439AF /* DesolationEntry.swift in Sources */,
+				F518697B29DA3AAE0074E5E7 /* IgnatianPracticesApp.swift in Sources */,
+				F5ED6FFB29EDEE2E007439AF /* NoteView.swift in Sources */,
+				F5ED6FD429E99A12007439AF /* LifeReviewView.swift in Sources */,
+				F5ED6FEA29EA4F71007439AF /* ConsolationEntry.swift in Sources */,
+				F5ED6FEE29EDB9D6007439AF /* Contemplation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F518698329DA3AAF0074E5E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F518698429DA3AAF0074E5E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F518698629DA3AAF0074E5E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IgnatianPractices/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM737S83P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.auburn.onlinecsse.IgnatianPractices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F518698729DA3AAF0074E5E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IgnatianPractices/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM737S83P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.auburn.onlinecsse.IgnatianPractices;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F518697229DA3AAE0074E5E7 /* Build configuration list for PBXProject "IgnatianPractices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F518698329DA3AAF0074E5E7 /* Debug */,
+				F518698429DA3AAF0074E5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F518698529DA3AAF0074E5E7 /* Build configuration list for PBXNativeTarget "IgnatianPractices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F518698629DA3AAF0074E5E7 /* Debug */,
+				F518698729DA3AAF0074E5E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5ED6FC229E8E074007439AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5ED6FC329E8E074007439AF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5ED6FC229E8E074007439AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F5ED6FC529E8E074007439AF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5ED6FC229E8E074007439AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F5ED6FC729E8E074007439AF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5ED6FC229E8E074007439AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F518696F29DA3AAE0074E5E7 /* Project object */;
+}
